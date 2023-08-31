@@ -2,10 +2,11 @@
 
 # Import the theme
 theme: jekyll-theme-chirpy
+include: [".well-known"]
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: "/saha.run.test"
+# base: "/saha.run.test"
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -23,10 +24,10 @@ title: saha.run # the main title
 tagline: "さはるんのサイト" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  さはるんのサイト
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://saharu.github.io/saha.run.test/"
+: "https://saha.run"
 
 github:
   username: saharu # change to your github username
@@ -69,7 +70,7 @@ google_analytics:
 theme_mode: # [light|dark]
 
 # The CDN endpoint for images.
-# Notice that once it is assigned, the CDN url
+# Notice that once it is assigned, the CDN 
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
@@ -89,7 +90,7 @@ comments:
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    issue_term: # <  | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
