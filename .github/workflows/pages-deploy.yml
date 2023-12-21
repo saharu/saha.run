@@ -57,7 +57,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v2 # This will automatically upload an artifact from the '/_site' directory
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: "${{ steps.pages.outputs.base_path }}/"
 
   deploy:
     environment:
