@@ -52,19 +52,19 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer "${{ steps.pages.outputs.base_path }}/" --disable-external --check-html --allow_hash_href
+          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v2 # This will automatically upload an artifact from the '/_site' directory
         with:
-          path: "${{ steps.pages.outputs.base_path }}/"
+          path: "_site${{ steps.pages.outputs.base_path }}"
 
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build 
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
